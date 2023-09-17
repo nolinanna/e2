@@ -1,5 +1,5 @@
 # e2
-## By: Anna Nolin
+## By: Anna N.
 ### Course work for DGMD E-2
 
 <https://extension.harvard.edu/>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,8 +18,6 @@
     <ul>
         <li>1.</li>
     </ul>
-
-
 </body>
 
 </html>

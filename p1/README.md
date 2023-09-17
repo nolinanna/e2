@@ -1,7 +1,7 @@
 _Any instructions/notes in italics should be removed from the template before submitting_
 
 # Project 1
-+ By: Anna Nolin
++ By: Anna N.
 + URL: <http://e2p1.nolinanna.me>
 
 ## Game planning
