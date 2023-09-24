@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-    <h1>Project 1</h1>
-    <h2>Game Mechanics</h2>
-    <ul>
-        <li>1.</li>
-    </ul>
-    <h2>Results</h2>
-    <ul>
-        <li>1.</li>
-    </ul>
-</body>
-
-</html>
+require 'index-view.php';
