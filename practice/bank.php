@@ -43,4 +43,3 @@ $total = ($pennies * $penny_value) + ($nickels * $nickel_value) + ($dimes * $dim
 </body>
 
 </html>
-
