@@ -1,4 +1,86 @@
 <?php
 
+#   Setup
+//  Rolls for initiative
+$first = rand(1,6);
+$second = rand(1,6);
+
+//  Turns
+$tied = "There was no tie.";
+$currentPlayer = "";
+
+#   Step 1. Determine Who Goes First
+//  If rolls tie, then re-roll. If rolls don't tie, move on to evaluate which is greater.
+//  note to self: do-while only loops if it evaluates as true. 
+do {
+    if ($first == $second) {
+        $tied = "Players tied and rolled again.";
+        $first = rand(1, 6);
+        $second = rand(1, 6);
+    }
+} while ($first == $second); 
+
+if ($first > $second) {
+    $currentPlayer = "Player 1";
+} else {
+    $currentPlayer = "Player 2";
+}
+
+# Working
+// $firstRoll = [];
+// for ($i = 0; $i < 3; $i++) {
+//         $firstRoll[] = rand(1, 6);
+//     }
+
+// $secondRoll = [];
+// for ($i = 0; $i < 2; $i++) {
+//         $secondRoll[] = rand(1, 6);
+//     }
+
+// $maxOne = max($firstRoll);
+// $maxTwo = max($secondRoll);
+// $maxThree = rand(1, 6);
+
+// $round = [$maxOne, $maxTwo, $maxThree];
+// $result = array_sum($round);
+
+
+    $firstRoll = [];
+    for ($i = 0; $i < 3; $i++) {
+            $firstRoll[] = rand(1, 6);
+        }
+
+    $secondRoll = [];
+    for ($i = 0; $i < 2; $i++) {
+            $secondRoll[] = rand(1, 6);
+        }
+
+    $maxOne = max($firstRoll);
+    $maxTwo = max($secondRoll);
+    $maxThree = rand(1, 6);
+
+    $round = [$maxOne, $maxTwo, $maxThree];
+    $result = array_sum($round);
+
+$player1 = [
+    'Score' => $result
+];
+
+var_dump($player1);
+
+
+# Determine Winner
+
+// if ($player1 > $player2) {
+//     $win1 = "Player 1 Wins!";
+// } elseif ($player2 > $player1) {
+//     $win2 = "Player 2 Wins!";
+// } else {
+//     $win3 = "The game is a tie.";
+// }
+
+
+
+
 
 require 'index-view.php';
