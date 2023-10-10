@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -29,20 +28,10 @@
         <li><?php echo $tied ?></li>
         <li><b>Player 1</b> rolled a <b><?php echo $first ?></b>.</li>
         <li><b>Player 2</b> rolled a <b><?php echo $second ?></b>.</li>
-        <li><b><?php echo $currentPlayer ?></b> starts.</li>
-        <!-- <li><b><?php echo $start1 ?><?php echo $start2 ?></b> got
-            <?php var_dump($firstRoll)?>. <?php echo $moveOne ?> was
-            the highest number.</li>
-        <li><b><?php echo $currentPlayer ?></b> got <?php var_dump($secondRoll)?>.
-            <?php echo $moveTwo ?> was the highest number.</li>
-        <li><b><?php echo $currentPlayer ?></b> got <?php echo $moveThree ?> for their
-            final roll.</li>
-        <li><b><?php echo $currentPlayer ?></b>'s score is <?php echo $resultA ?>.</li> -->
-        <!-- <li>Player # got (1,2,3). <?php echo $moveOne ?> was the highest number.</li>
-        <li>Player # got (1,2). <?php echo $moveTwo ?> was the highest number.</li>
-        <li>Player # got <?php echo $moveThree ?> for their final roll.</li>
-        <li>Player # score is <?php echo $resultB ?></li>
-        <li>The winner is <?php echo $winner ?></li> -->
+        <li><b><?php echo $currentPlayer ?></b> is the first player.</li>
+        <li><b><?php echo $currentPlayer ?></b> got a max score of <?php echo $player1 ?>.</li>
+        <li><b><?php echo $otherPlayer ?></b> got a max score of <?php echo $player2 ?>.</li>
+        <li>The winner is <b><?php echo $win ?></b>!</li>
     </ul>
 </body>
 
