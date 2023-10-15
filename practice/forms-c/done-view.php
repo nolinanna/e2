@@ -26,7 +26,7 @@
 
     <?php if($haveAnswer == false) { ?>
     <div class='noAnswer'>Please enter an answer.</div>
-    <?php } else if ($answer == 'pumpkin') { ?>
+    <?php } else if ($correct) { ?>
     <div class='correct'>You got it correct!</div>
     <?php } else { ?>
     <div class='incorrect'>You got it wrong.</div>
