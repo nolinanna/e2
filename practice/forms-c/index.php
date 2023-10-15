@@ -1,25 +1,13 @@
-<!doctype html>
-<html lang='en'>
+<?php
+session_start();
 
-<head>
-    <title>Mystery Word Scramble</title>
-    <meta charset='utf-8'>
-</head>
+if (!is_null($_SESSION['results'])) {
+    $results = $_SESSION['results'];
 
-<body>
+    $haveAnswer = $results['haveAnswer'];
+    $correct = $results['correct'];
 
-    <form method='POST' action='process.php'>
-        <h1>Mystery Word Scramble</h1>
+    $_SESSION['results'] = null;
+}
 
-        <p>Mystery word: kiumppn</p>
-        <p>Hint: Halloween’s favorite fruit</p>
-
-        <label for='answer'>Your guess:</label>
-        <input type='text' name='answer' id='answer'>
-
-        <button type='submit'>Check answer</button>
-    </form>
-
-</body>
-
-</html>
+require 'index-view.php';

@@ -19,4 +19,4 @@ $_SESSION['results'] = [
     'correct' => $correct
 ];
 
-header('Location: done.php');
+header('Location: index.php');
