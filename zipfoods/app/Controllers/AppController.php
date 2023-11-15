@@ -17,8 +17,15 @@ class AppController extends Controller
 
     public function contact()
     {
-        return $this->app->view('contact', [
-            'email' => 'support@zipfoods.com'
-        ]);
+        return $this->app->redirect('/done');
+
+        // return $this->app->view('contact', [
+        //     'email' => 'support@zipfoods.com'
+        // ]);
+    }
+
+    public function done()
+    {
+        return $this->app->view('done');
     }
 }
