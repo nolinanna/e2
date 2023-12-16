@@ -10,6 +10,7 @@
         <li>Rock beats scissors
         <li>Paper beats rock
         <li>Scissors beats paper
+        <li>Two of the same is a tie!
     </ul>
 
     <form method='POST' action='/process'>
@@ -19,4 +20,19 @@
 
         <button type='submit'>Shoot!</button>
     </form>
+
+    @if ($choice)
+        <div class='results'>
+            You chose {{ $choice }} and your opponent chose {{ $computer }}.
+
+            @if ($result == 'win')
+                <div class='win'>You won!</div>
+            @elseif($result == 'tie')
+                <div class='tie'>You tied.</div>
+            @else
+                <div class='lose'>You lost.</div>
+            @endif
+        </div>
+    @endif
+
 @endsection
