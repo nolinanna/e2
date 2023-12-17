@@ -13,6 +13,10 @@
         <li>Two of the same is a tie!
     </ul>
 
+    <div class='history'>
+        <a href='/history'>See your game history.</a>
+    </div>
+
     <form method='POST' action='/process'>
         <input type='radio' name='choice' value='rock' id='rock'><label for='rock'>Rock</label>
         <input type='radio' name='choice' value='paper' id='paper'><label for='paper'>Paper</label>
@@ -20,6 +24,14 @@
 
         <button type='submit'>Shoot!</button>
     </form>
+
+    @if ($app->errorsExist())
+        <ul class='error alert alert-danger'>
+            @foreach ($app->errors() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    @endif
 
     @if ($choice)
         <div class='results'>

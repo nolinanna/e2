@@ -20,6 +20,10 @@ class AppController extends Controller
 
     public function process()
     {
+        $this->app->validate([
+            'choice' => 'required'
+        ]);
+
         # Player's choice
         $choice = $this->app->input('choice');
 
@@ -35,6 +39,14 @@ class AppController extends Controller
             $result = 'lose';
         }
 
+        #Records game into database
+        $this->app->db()->insert('rounds',[
+            'choice' => $choice,
+            'computer' => $computer,
+            'result' => $result,
+            'timestamp' => date('Y-m-d H:i:s')
+        ]);
+
         #Returns player to game page and stores results
         return $this->app->redirect('/', [
             'choice' => $choice, 
@@ -45,11 +57,17 @@ class AppController extends Controller
 
     public function history() 
     {
-        return $this->app->view('history');
+        $rounds = $this->app->db()->all('rounds');
+
+        return $this->app->view('history', ['rounds' => $rounds]);
     }
 
     public function round()
     {
-        return $this->app->view('round');
+        $id = $this->app->param('id');
+
+        $round = $this->app->db()->findById('rounds', $id);
+        
+        return $this->app->view('round', ['round' => $round]);
     }
 }
