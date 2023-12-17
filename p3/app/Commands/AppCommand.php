@@ -8,7 +8,7 @@ class AppCommand extends Command
 {
     public function fresh(){
         $this->migrate();
-        // $this->seed();
+        $this->seed();
     }
     
     public function migrate()
