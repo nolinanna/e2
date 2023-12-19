@@ -39,7 +39,7 @@ class AppController extends Controller
             $result = 'lose';
         }
 
-        #Records game into database
+        #Records game into database table
         $this->app->db()->insert('rounds',[
             'choice' => $choice,
             'computer' => $computer,

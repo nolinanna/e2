@@ -7,9 +7,21 @@
 + [x] I am taking this course for undergraduate credit and have opted out of integrating testing into my application
 
 ## Outside resources
-*your list of outside resources go here*
+https://getbootstrap.com/docs/4.1/getting-started/introduction/
+https://fonts.google.com/specimen/Nunito+Sans
+https://css-tricks.com/ease-out-in-ease-in-out/
+https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow
 
 ## Notes for instructor
-*any notes for me to refer to while grading; if none, omit this section*
+I did my project 2, because I wasn't sure I would be able to get my project 1 working correctly. This was still a struggle for me! 
 
-## Codeception testing output
+I mainly referenced your week 15 and the zipfoods lectures to get the underlying areas working - by doing this project, the ideas clicked better, but my ability to maneuver it is still shaky at best. I am looking forward to reviewing the material after this class, and I am so grateful that your lectures and notes are very clear and will remain available. 
+
+
+
+
+
+
+
+
+

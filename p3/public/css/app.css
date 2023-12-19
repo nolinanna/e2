@@ -1,3 +1,118 @@
+/* Global Styles */
+
+body {
+    background-color: #2d738e;
+    font-family: 'Nunito Sans';
+    color: #fff;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #2fabdb;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
 #logo {
-    width: 300px;
+    margin: 1rem 0 2.5rem 0;
+    width: 550px;
+    transition: filter 0.5s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#logo:hover {
+    filter: drop-shadow(0 0 0.75rem #75d6e0);
+}
+
+/* Index Styles */
+
+.results {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.lose,
+.win,
+.tie {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.lose {
+    color: #ff70ad;
+}
+
+.error {
+    list-style-type: none;
+}
+
+/* Form */
+
+.highlight {
+    color: #ff70ad;
+}
+
+.picks {
+    font-size: 1.5rem;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 0.25rem #7fdcff);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 .75rem #fa2280);
+    }
+}
+
+input[type="radio"]:checked+label {
+    animation: glow 3s infinite alternate;
+}
+
+button {
+    background-color: #2d738e;
+    border: 2px solid #ff70ad;
+    border-radius: 10%;
+    margin: 1rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #ff70ad;
+    font-weight: 700;
+}
+
+/* History Styles */
+
+.rounds li {
+    background-color: #2d738e;
+    border: 2px solid #ff70ad;
+    list-style-type: none;
+    display: inline-block;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.rounds li:hover {
+    background-color: #ff70ad;
+    font-weight: 700;
+}
+
+/* Round Details Styles */
+
+.roundRecap {
+    padding: 1rem;
+    background-color: #2d738e;
+    border: 2px solid #ff70ad;
 }

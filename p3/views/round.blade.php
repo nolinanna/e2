@@ -5,23 +5,26 @@
 @endsection
 
 @section('content')
-    <h2>Round Details</h2>
+    <div class='container-fluid'>
+        <div class='row'>
+            <h2 class='text-center'>Round Details for Play #{{ $round['id'] }}</h2>
+            <p class='text-center'><a href='/history'>Return to Round Recap</a></p>
 
-    <ul>
-        <li>Round ID: {{ $round['id'] }}</li>
-        <li>Player's choice: {{ $round['choice'] }}</li>
-        <li>Computer's choice: {{ $round['computer'] }}</li>
+            <div class='col-sm'></div>
+            <div class='col-sm roundRecap'>
+                <p>{{ $round['timestamp'] }}</p>
+                <p>Player chose {{ $round['choice'] }}.</p>
+                <p>Opponent chose {{ $round['computer'] }}.</p>
 
-        @if ($round['result'] == 'tie')
-            <li>Players tied.</li>
-        @elseif($round['result'] == 'win')
-            <li>Player wins!</li>
-        @else
-            <li>Player lost.</li>
-        @endif
-
-        <li>Time: {{ $round['timestamp'] }}</li>
-    </ul>
-
-    <p><a href='/history'>Return to Round Recap</a></p>
+                @if ($round['result'] == 'tie')
+                    Players <b class='highlight'>tied.</b>
+                @elseif($round['result'] == 'win')
+                    Player <b class='highlight'>survived.</b>
+                @else
+                    Player was <b class='highlight'>eliminated.</b>
+                @endif
+            </div>
+            <div class='col-sm'></div>
+        </div>
+    </div>
 @endsection
