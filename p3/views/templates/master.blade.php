@@ -19,11 +19,9 @@
 <body>
 
     <header>
-        <div class='container-fluid'>
-            <div class='text-center'>
-                <a href='/'><img id='logo' class="img-fluid" src='/images/logo2.png'
-                        alt='Rock Paper Scissors'></a>
-            </div>
+        <div class='container-fluid text-center'>
+            <a href='/'><img id='logo' class="img-fluid" src='/images/logo2.png'
+                    alt='Rock Paper Scissors'></a>
         </div>
     </header>
 
