@@ -7,10 +7,10 @@
 + [x] I am taking this course for undergraduate credit and have opted out of integrating testing into my application
 
 ## Outside resources
-https://getbootstrap.com/docs/4.1/getting-started/introduction/
-https://fonts.google.com/specimen/Nunito+Sans
-https://css-tricks.com/ease-out-in-ease-in-out/
-https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow
++ [Bootstrap Docs](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
++ [Google fonts](https://fonts.google.com/specimen/Nunito+Sans)
++ [CSS timing notes](https://css-tricks.com/ease-out-in-ease-in-out/)
++ [Drop Shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow)
 
 ## Notes for instructor
 I did my project 2, because I wasn't sure I would be able to get my project 1 working correctly. This was still a struggle for me! 
